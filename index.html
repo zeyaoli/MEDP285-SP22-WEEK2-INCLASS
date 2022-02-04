@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Posters</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #poster{
+            background-color: #f25509;
+            width: 500px;
+            height: calc(500px / 18 * 24);
+            padding: 20px;
+        }
+        .text{
+            display: inline-block;
+            width: 100%;
+        }
+        #text--top{
+            padding-left: 280px;
+        }
+        #text--mid{
+            padding-left: 20px;
+        }
+        .text--small{
+            font-size: 20px;
+            line-height: 4px;
+        }
+        h4{
+            line-height: 1.25;
+            margin: 0px;
+        }
+        .text--dark{
+            color: rgba(0, 0, 0, 0.45);
+        }
+        .text--bright{
+            color: #dedfd3;
+        }
+        h1, .h1{
+            font-size: 220px;
+            margin: 0;
+        }
+        #text--bot{
+            margin-top: 120px;
+            margin-left: -30px;
+        }
+        #haus{
+            margin-top: -180px;
+        }
+    </style>
+</head>
+<body>
+    <div id="poster">
+        <div class="text text--small text--dark" id="text--top">
+            <h4>sunday</h4>
+            <h4>november 28 1982</h4>
+            <h4>a mass production</h4>
+        </div>
+        <div class="text text--small text--bright" id="text--mid">
+            <h4>at marble bar</h4>
+            <h4>306 w. franklin street</h4>
+            <h4>baltimore, md</h4>
+        </div>
+        <div class="text" id="text--bot">
+            <h1 class="text--bright">bau</h1>
+            <h2 class="h1 text--dark" id="haus">haus</h2>
+        </div>
+    </div>
+</body>
+</html>
